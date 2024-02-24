@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dummy placeholder data with song name, artist, and image
     const placeholders = [
         { image: 'https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/87/97/75/879775f4-51f6-dda5-9e13-f762d8f9a1fd/197189290183.jpg/600x600bf-60.jpg', song: 'Kaavaala (From "Jailer")', artist: 'By Anirudh Ravichander', audio: 'https://www.pagalworld.com.cm/files/download/id/67070' },
-        { image: 'https://c.saavncdn.com/823/Chithha-Tamil-2023-20230926235310-500x500.jpg', song: 'Unakku Thaan (From "Chithha)', artist: 'By Santhosh Narayanan', audio: 'https://files.samadada.com/movies/2023/Chithha/Unakku_Thaan_[SamaDada.Com].mp3' },
+        { image: 'https://c.saavncdn.com/823/Chithha-Tamil-2023-20230926235310-500x500.jpg', song: 'Unakku Thaan (From "Chithha)', artist: 'By Santhosh Narayanan', audio: 'https://pagallworld.co.in/wp-content/uploads/2024/02/Unakku-Thaan.mp3' },
         // Add more placeholder data as needed
     ];
 
