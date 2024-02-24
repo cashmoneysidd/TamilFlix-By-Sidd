@@ -1,0 +1,306 @@
+/* Styles here */
+
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.banner {
+  background-image: url('https://www.dolby.com/siteassets/xf-site/blocks/hero/netflix-gradient.png?width=1440&crop=1599,0.56');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e50914;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc0812;
+}
+
+.movies h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+/* Update styles.css */
+
+/* Add rounded borders to movie cards */
+.movie-card {
+  border-radius: 10px;
+  overflow: hidden; /* Ensure rounded corners are applied */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add pop-out effect on hover */
+.movie-card:hover {
+  transform: translateY(-5px); /* Move the card up slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Update movie image styles to ensure rounded borders */
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Apply rounded borders to the image */
+  transition: transform 0.3s ease;
+}
+
+/* Add scale-up effect on image hover */
+.movie-card:hover img {
+  transform: scale(1.05); /* Scale up the image slightly */
+}
+
+
+/* Update styles.css */
+
+/* Update styles.css */
+
+.movies {
+  padding-top: 20px; /* Increase the top padding to move the text down */
+}
+
+.movies h2 {
+  margin-bottom: 20px; /* Lower margin to move the heading slightly lower */
+  font-size: 36px;
+}
+
+/* Update styles.css */
+
+/* Update styles.css */
+
+.flix {
+  color: #e50914; /* Red color for "Flix" */
+}
+
+/* Update styles.css */
+
+/* Add white space styling */
+.white-space {
+  height: 300px; /* Adjust height as needed */
+  background-color: #ffffff; /* White background */
+}
+
+/* Add styles for vertical movie posters */
+.vertical-movies .movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-movies .movie-card img {
+  height: 500px; /* Set a fixed height for the movie posters */
+  object-fit: cover; /* Crop the images to fit the specified height */
+  margin-bottom: 10px; /* Add spacing between poster and details */
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+nav ul li a:hover {
+  color: red; /* Change color to red when hovered over */
+}
+/* Add styles for the Remembering Thalapathy's Cinema section */
+#remembering-thalapathy {
+  padding-top: 20px; /* Adjust as needed */
+}
+
+#remembering-thalapathy h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+/* Add styles for the Exclusively On TamilFlix section */
+#exclusively-tamilflix {
+  padding-top: 20px; /* Adjust as needed */
+}
+
+#exclusively-tamilflix h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+
+/* Position the video overlay to cover the entire parent container */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Make sure the overlay is above the images */
+  pointer-events: none; /* Allow click events to pass through to the images */
+  display: none; /* Initially hide the overlay */
+}
+
+/* Style the video player to cover the entire overlay */
+#videoPlayer {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust the z-index of the movie posters so they appear below the video overlay */
+.movie-card img {
+  position: relative;
+  z-index: 1;
+}
+
+#todays-picks .movie-card img {
+  height: 500px; /* Set a fixed height for the movie posters */
+  object-fit: cover; /* Crop the images to fit the specified height */
+  margin-bottom: 10px; /* Add spacing between poster and details */
+}
+.leoposter{
+  margin-left: 490px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.songs-section {
+  margin-top: 20px;
+}
+
+.songs-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  justify-content: center; /* Center items horizontally */
+}
+
+.song {
+  flex: 0 0 auto;
+  width: 575px; /* Adjust as needed */
+  text-align: center; /* Center text inside song div */
+}
+
+.song video {
+  width: 100%; /* Make video responsive */
+  height: 100%; /* Make video fill its container */
+  object-fit: cover; /* Fill container without black bars */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+#xtt{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+
+#music {
+  background-color: #191414;
+  color: #ffffff; /* Set text color to white */
+}
+
+#music h2 {
+  color: #ffffff; /* Set heading text color to white */
+}
+/* Music section */
+#music {
+  background-color: black;
+  color: white;
+}
+
+/* Remove white space */
+.white-space {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.siddy{
+  margin-top: -100px;
+}
